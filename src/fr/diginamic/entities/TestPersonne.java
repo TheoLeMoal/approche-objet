@@ -13,6 +13,6 @@ public class TestPersonne {
         per1.nom = "Doe";
         per1.prenom = "Jhon";
         per1.adr = adr1;
-        System.out.println("per1 = " + per1.adr.libelle);
+        System.out.println("per1 = " + per1);
     }
 }

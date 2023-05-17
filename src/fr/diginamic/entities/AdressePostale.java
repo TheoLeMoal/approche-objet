@@ -11,4 +11,14 @@ public class AdressePostale {
         this.codeP = codeP;
         this.ville = ville;
     }
+
+    @Override
+    public String toString() {
+        return "AdressePostale{" +
+                "num='" + num + '\'' +
+                ", libelle='" + libelle + '\'' +
+                ", codeP='" + codeP + '\'' +
+                ", ville='" + ville + '\'' +
+                '}';
+    }
 }

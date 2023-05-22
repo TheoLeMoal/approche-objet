@@ -2,9 +2,9 @@ package fr.diginamic.banque.entities;
 
 public class Compte {
     long numCompte;
-    float solde;
+    double solde;
 
-    public Compte(long numCompte, float solde) {
+    public Compte(long numCompte, double solde) {
         this.numCompte = numCompte;
         this.solde = solde;
     }
@@ -17,11 +17,11 @@ public class Compte {
         this.numCompte = numCompte;
     }
 
-    public float getSolde() {
+    public double getSolde() {
         return solde;
     }
 
-    public void setSolde(float solde) {
+    public void setSolde(double solde) {
         this.solde = solde;
     }
 

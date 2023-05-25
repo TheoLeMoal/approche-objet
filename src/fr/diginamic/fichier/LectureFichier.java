@@ -21,9 +21,10 @@ public class LectureFichier {
             String codeDepartement = tokens[2].replaceAll("\\s", ""); // Enlève les espaces du code département
             String nomRegion = tokens[1].replaceAll("\\s", ""); // Enlève les espaces du nom de la région
             int populationTotale = Integer.parseInt(tokens[9].replaceAll("\\s", "")); // Enlève les espaces de la population totale
-
-            Ville ville = new Ville(nom, codeDepartement, nomRegion, populationTotale);
-            villes.add(ville);
+            if (populationTotale > 25000){
+                Ville ville = new Ville(nom, codeDepartement, nomRegion, populationTotale);
+                villes.add(ville);
+            }
         }
         List<String> lignes2= new ArrayList<>();
         lignes2.add("Nom de la commune;Code département;Nom de la région;Population totale");

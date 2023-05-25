@@ -21,7 +21,13 @@ public class TestOperation {
             } else if (operation instanceof Debit) {
                 montantGlobal -= operation.getMontant();
             }
-
+            /*
+            if (operation.getType() == "CREDIT") {
+                montantGlobal += operation.getMontant();
+            } else if (operation.getType() == "DEBIT") {
+                montantGlobal -= operation.getMontant();
+            }
+            */
             System.out.println();
         }
 

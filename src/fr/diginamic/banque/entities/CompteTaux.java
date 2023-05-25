@@ -11,10 +11,6 @@ public class CompteTaux extends Compte{
 
     @Override
     public String toString() {
-        return "CompteTaux{" +
-                "taux=" + taux +
-                ", numCompte=" + numCompte +
-                ", solde=" + solde +
-                '}';
+        return super.toString()+"taux : " + this.taux;
     }
 }

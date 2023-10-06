@@ -13,6 +13,13 @@ public class Personne {
 		this.prenom = prenom;
 		this.adresse = adresse;
 	}
+	
+	public Personne() {
+		super();
+		this.nom = "Unknow";
+		this.prenom = "Unknow";
+		this.adresse = adresse;
+	}
 
 	@Override
 	public String toString() {

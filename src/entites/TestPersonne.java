@@ -14,8 +14,9 @@ public class TestPersonne {
 		 * Personne
 		 */
 		Personne pers1 = new Personne("Le Moal", "Theo", addr1);
-		Personne pers2 = new Personne("Le Moal", "Theo", addr2);
+		Personne pers2 = new Personne();
 		System.out.println(pers1);
+		System.out.println(pers2);
 	}
 
 }

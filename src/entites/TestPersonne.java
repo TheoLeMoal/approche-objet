@@ -14,9 +14,16 @@ public class TestPersonne {
 		 * Personne
 		 */
 		Personne pers1 = new Personne("Le Moal", "Theo", addr1);
+		//On modifie l'adresse
+		pers1.setAdresse(addr2);
 		Personne pers2 = new Personne();
+		/**
+		 * Affichage
+		 */
 		System.out.println(pers1);
 		System.out.println(pers2);
+		
+	
 	}
 
 }

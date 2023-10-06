@@ -3,10 +3,19 @@ package entities2;
 import entites.AdressePostale;
 
 public class Personne {
+	//Nom de la personne
 	public String nom;
+	//Prénom de la personne
 	public String prenom;
+	//Adresse de la personne
 	public AdressePostale adresse;
 	
+	/**
+	 * Constructeur
+	 * @param nom
+	 * @param prenom
+	 * @param adresse
+	 */
 	public Personne(String nom, String prenom, AdressePostale adresse) {
 		super();
 		this.nom = nom;
@@ -14,6 +23,9 @@ public class Personne {
 		this.adresse = adresse;
 	}
 	
+	/**
+	 * Constructeur si il est vide
+	 */
 	public Personne() {
 		super();
 		this.nom = "Unknow";
@@ -42,14 +54,26 @@ public class Personne {
 		return prenom;
 	}
 
+	/**
+	 * 
+	 * @param prenom
+	 */
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public AdressePostale getAdresse() {
 		return adresse;
 	}
-
+	
+	/**
+	 * 
+	 * @param adresse
+	 */
 	public void setAdresse(AdressePostale adresse) {
 		this.adresse = adresse;
 	}

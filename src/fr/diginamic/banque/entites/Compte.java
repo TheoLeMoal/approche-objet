@@ -26,5 +26,26 @@ public class Compte {
 		this.solde = 0;
 	}
 	
+	@Override
+	public String toString() {
+		return "Compte [num=" + num + ", solde=" + solde + "]";
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+
+	public float getSolde() {
+		return solde;
+	}
+
+	public void setSolde(float solde) {
+		this.solde = solde;
+	}
+	
 	
 }

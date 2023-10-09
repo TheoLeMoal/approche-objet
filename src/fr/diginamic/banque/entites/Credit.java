@@ -2,9 +2,13 @@ package fr.diginamic.banque.entites;
 
 public class Credit extends Operation{
 
+	/**
+	 * Constructeur
+	 * @param date
+	 * @param montant
+	 */
 	public Credit(String date, int montant) {
 		super(date, montant);
-		// TODO Auto-generated constructor stub
 	}
 
 	/**

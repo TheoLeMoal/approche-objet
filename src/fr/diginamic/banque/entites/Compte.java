@@ -31,18 +31,34 @@ public class Compte {
 		return "Compte [num=" + num + ", solde=" + solde + "]";
 	}
 
+	/**
+	 * Récuperer le numéro
+	 * @return
+	 */
 	public int getNum() {
 		return num;
 	}
 
+	/**
+	 * Modifier le numéro
+	 * @param num
+	 */
 	public void setNum(int num) {
 		this.num = num;
 	}
 
+	/**
+	 * Récuperer le solde
+	 * @return
+	 */
 	public float getSolde() {
 		return solde;
 	}
 
+	/**
+	 * Modifier le solde
+	 * @param solde
+	 */
 	public void setSolde(float solde) {
 		this.solde = solde;
 	}

@@ -16,7 +16,7 @@ public class RechercheTopVillesParRegion extends MenuService{
         if (villes.isEmpty()) {
             System.out.println("Aucune ville trouvée pour ce département.");
         } else {
-            // Triez la liste des villes par population (vous devrez implémenter la méthode compareTo dans la classe Ville)
+            // Triez la liste des villes par population
             villes.sort((ville1, ville2) -> ville2.getPopulationTotale() - ville1.getPopulationTotale());
 
             // Affichez les 10 villes les plus peuplées du département

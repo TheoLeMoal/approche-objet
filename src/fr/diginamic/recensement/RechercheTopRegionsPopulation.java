@@ -9,7 +9,7 @@ public class RechercheTopRegionsPopulation extends MenuService{
 	public void traiter(Recensement recensement, Scanner scanner) {
 		List<Region> regions = recensement.getRegions();
 		
-        // Triez la liste des régions par population (vous devrez implémenter la méthode compareTo dans la classe Region)
+        // Triez la liste des régions par population
         regions.sort((region1, region2) -> region2.getPopulation() - region1.getPopulation());
 
         // Affichez les 10 régions les plus peuplées

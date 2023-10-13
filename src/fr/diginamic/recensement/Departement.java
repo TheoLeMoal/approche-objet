@@ -47,5 +47,11 @@ public class Departement {
 	public void setPopulation(int population) {
 		this.population = population;
 	}
+
+	@Override
+	public String toString() {
+		return "Departement [code=" + code + ", population=" + population + "]";
+	}
+	
 	
 }

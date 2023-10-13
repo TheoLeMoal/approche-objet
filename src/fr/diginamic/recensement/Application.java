@@ -60,6 +60,9 @@ public class Application {
         }
 	}
 
+	/**
+	 * Affiche le menu
+	 */
     private static void afficherMenu() {
         System.out.println("\nMenu :");
         System.out.println("1. Population d’une ville donnée");

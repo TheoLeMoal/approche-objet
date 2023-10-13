@@ -13,20 +13,36 @@ public class Recensement {
     private List<Ville> villes = new ArrayList<>();
     private List<Region> regions = new ArrayList<>();
     private List<Departement> departements = new ArrayList<>();
+    
+    /**
+     * Constructeur
+     */
     public Recensement() {
         this.villes = new ArrayList<>();
         this.regions = new ArrayList<>();
         this.departements = new ArrayList<>();
     }
 
+    /**
+     * Retourne les villes
+     * @return
+     */
     public List<Ville> getVilles() {
         return villes;
     }
 
+    /**
+     * Retourne les régions
+     * @return
+     */
     public List<Region> getRegions() {
         return regions;
     }
 
+    /***
+     * Retourne les département
+     * @return
+     */
     public List<Departement> getDepartements() {
         return departements;
     }
@@ -92,7 +108,11 @@ public class Recensement {
 		}
     }
 
-
+    /**
+     * Retourne les villes d'un département
+     * @param codeDepartement
+     * @return
+     */
     public List<Ville> getVillesByDepartement(String codeDepartement) {
         List<Ville> villesByDepartement = new ArrayList<>();
         
@@ -105,7 +125,11 @@ public class Recensement {
         return villesByDepartement;
     }
 
-
+	/**
+	 * Retourne les ville d'une région
+	 * @param nomRegion
+	 * @return
+	 */
     public List<Ville> getVillesByRegion(String nomRegion) {
         List<Ville> villesByRegion = new ArrayList<>();
         

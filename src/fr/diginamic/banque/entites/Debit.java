@@ -16,8 +16,12 @@ public class Debit extends Operation{
 	 */
 	@Override
 	public String getType() {
-		// TODO Auto-generated method stub
 		return "DEBIT";
+	}
+
+	@Override
+	public double imputerSolde(double solde) {
+		return this.getMontant() - solde;
 	}
 
 }

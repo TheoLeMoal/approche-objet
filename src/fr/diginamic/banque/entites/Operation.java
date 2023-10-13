@@ -21,6 +21,8 @@ public abstract class Operation {
 	}
 	
 	public abstract String getType();
+	
+	public abstract double imputerSolde(double solde);
 
 	/**
 	 * Récuperer la date

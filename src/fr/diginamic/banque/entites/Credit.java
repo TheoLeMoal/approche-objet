@@ -19,5 +19,9 @@ public class Credit extends Operation{
 		// TODO Auto-generated method stub
 		return "CREDIT";
 	}
+	
+	public double imputerSolde(double solde) {
+		return this.getMontant() + solde;
+	}
 
 }

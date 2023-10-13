@@ -12,7 +12,6 @@ public class TestOperation {
 		Operation credit1 = new Credit("test3", 3);
 		Operation credit2 = new Credit("test4", 4);
 		Operation[] operations = new Operation[4];
-		
 		operations[0] = debit1;
 		operations[1] = debit2;
 		operations[2] = credit1;

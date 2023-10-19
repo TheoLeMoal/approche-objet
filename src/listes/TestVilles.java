@@ -6,14 +6,14 @@ public class TestVilles {
     public static void main(String[] args) {
         // Créez une ArrayList de villes
         ArrayList<Ville> listeVilles = new ArrayList<>();
-        listeVilles.add(new Ville("Nice", 343000));
-        listeVilles.add(new Ville("Carcassonne", 47800));
-        listeVilles.add(new Ville("Narbonne", 53400));
-        listeVilles.add(new Ville("Lyon", 484000));
-        listeVilles.add(new Ville("Foix", 9700));
-        listeVilles.add(new Ville("Pau", 77200));
-        listeVilles.add(new Ville("Marseille", 850700));
-        listeVilles.add(new Ville("Tarbes", 40600));
+        listeVilles.add(new Ville("New York", 8537673, Continent.AMERIQUE));
+        listeVilles.add(new Ville("Paris", 2175601, Continent.EUROPE));
+        listeVilles.add(new Ville("Pékin", 21516000, Continent.ASIE));
+        listeVilles.add(new Ville("Moscou", 12615882, Continent.EUROPE));
+        listeVilles.add(new Ville("Berlin", 3759493, Continent.EUROPE));
+        listeVilles.add(new Ville("Sydney", 4627345, Continent.OCEANIE));
+        listeVilles.add(new Ville("Sao Paulo", 12106920, Continent.AMERIQUE));
+        listeVilles.add(new Ville("Dakar", 1040444, Continent.AFRIQUE));
 
         // Recherchez et affichez la ville la plus peuplée
         Ville villePlusPeuplee = listeVilles.get(0);

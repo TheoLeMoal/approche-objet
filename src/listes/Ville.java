@@ -12,6 +12,12 @@ public class Ville {
         this.nbHabitants = nbHabitants;
         this.continent = continent;
     }
+    
+    public Ville(String nom, int nbHabitants) {
+        this.nom = nom;
+        this.nbHabitants = nbHabitants;
+    }
+
 
     /**
 	 * @return the nom

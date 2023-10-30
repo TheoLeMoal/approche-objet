@@ -10,15 +10,15 @@ public class TestPays {
         HashSet<Pays> paysHashSet = new HashSet<>();
 
         // Ajoutez les pays avec leurs informations
-        paysHashSet.add(new Pays("USA", 331002651, 62606.25));
-        paysHashSet.add(new Pays("France", 65273511, 39455.29));
-        paysHashSet.add(new Pays("Allemagne", 83783942, 48457.52));
-        paysHashSet.add(new Pays("UK", 67886011, 42719.67));
-        paysHashSet.add(new Pays("Italie", 60461826, 31952.96));
-        paysHashSet.add(new Pays("Japon", 126476461, 42946.94));
-        paysHashSet.add(new Pays("Chine", 1444216107, 10715.59));
-        paysHashSet.add(new Pays("Russie", 145912025, 11218.13));
-        paysHashSet.add(new Pays("Inde", 1380004385, 2103.23));
+        paysHashSet.add(new Pays("USA", 331002651, (long) 62606.25));
+        paysHashSet.add(new Pays("France", 65273511, (long) 39455.29));
+        paysHashSet.add(new Pays("Allemagne", 83783942, (long) 48457.52));
+        paysHashSet.add(new Pays("UK", 67886011, (long) 42719.67));
+        paysHashSet.add(new Pays("Italie", 60461826, (long) 31952.96));
+        paysHashSet.add(new Pays("Japon", 126476461, (long) 42946.94));
+        paysHashSet.add(new Pays("Chine", 1444216107, (long) 10715.59));
+        paysHashSet.add(new Pays("Russie", 145912025, (long) 11218.13));
+        paysHashSet.add(new Pays("Inde", 1380004385, (long) 2103.23));
 
         // Affichez les informations de chaque pays
         for (Pays pays : paysHashSet) {

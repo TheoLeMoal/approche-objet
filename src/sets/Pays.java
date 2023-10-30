@@ -1,16 +1,22 @@
 package sets;
 
+import annotations.ToString;
+
 public class Pays {
-	private String nom;
+    @ToString(uppercase = false, separator = "->")
+    private String nom;
+    
+    @ToString(separator = " $")
+    private long pibParHabitant;
+
 	private int nbHabitants;
-	private double pibParHabitant;
 	
 	/**
 	 * @param nom
 	 * @param nbHabitants
 	 * @param pibParHabitant
 	 */
-	public Pays(String nom, int nbHabitants, double pibParHabitant) {
+	public Pays(String nom, int nbHabitants, long pibParHabitant) {
 		super();
 		this.nom = nom;
 		this.nbHabitants = nbHabitants;
@@ -63,14 +69,15 @@ public class Pays {
 	/**
 	 * @param pibParHabitant the pibParHabitant to set
 	 */
-	public void setPibParHabitant(double pibParHabitant) {
+	public void setPibParHabitant(long pibParHabitant) {
 		this.pibParHabitant = pibParHabitant;
 	}
 
 	@Override
 	public String toString() {
-		return "Pays [nom=" + nom + ", nbHabitants=" + nbHabitants + ", pibParHabitant=" + pibParHabitant + "]";
+		return "Pays [nom=" + nom + ", pibParHabitant=" + pibParHabitant + ", nbHabitants=" + nbHabitants + "]";
 	}
+
 	
 	
 }
